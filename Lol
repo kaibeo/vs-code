@@ -1,0 +1,11 @@
+dsLop = []
+
+n = int(input("Nhập số học sinh trong lớp: "))
+
+for i in range(n):
+    name = input("Nhập họ tên học sinh thứ " + str(i+1) + ": ")
+    dsLop.insert(0, name)   # chèn vào đầu để đảo thứ tự
+
+print("Danh sách học sinh đã nhập:")
+for name in dsLop:
+    print(name)
